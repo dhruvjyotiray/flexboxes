@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+}
+
+#box1 {
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-content: center; */
+    /* height: 50vh; */
+}
+
+#box1 > div {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+
+}
+
+#box1 > div:nth-of-type(even) {
+    background-color: lightskyblue;
+}
+
+#box1 > div:nth-of-type(1) {
+    flex-grow: 1;
+}
+#box1 > div:nth-of-type(2) {
+   flex-grow: 5;
+}
+#box1 > div:nth-of-type(3) {
+    flex-grow: 1;
+}
+#box1 > div:nth-of-type(4) {
+    order: 1;
+}
+
+#box2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+}
+
+#box2 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    width: 200px;
+    height: 200px;
+    background-color: lightpink;
+    flex-shrink: 0;
+}
+
+#box2 > div:nth-of-type(odd) {
+    background-color: lightgrey;
+}
+
+
+#box2 > div:nth-of-type(4) {
+    align-self: flex-start;
+    align-self: stretch;
+    height: auto;
+}
+
+
+
+#box3 {
+    display: flex;
+}
+
+#box3 > div {
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    flex-shrink: 0;
+}
+
+#box3 > div:nth-of-type(even) {
+    background-color: lightgreen;
+}
+
+#box3 > div:nth-of-type(3) {
+    flex-basis: 400px;
+}
